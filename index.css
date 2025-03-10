@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: Outfit;
+}
+
+.scrollbar-style {
+  @apply text-white bg-primary hidden block;
+}
+
+@media (max-width: 740px) {
+  .active p hr ::-webkit-scrollbar {
+    display: block;
+    color: white;
+    background-color: var(--primary);
+  }
+}
